@@ -1,0 +1,163 @@
+/* ========================================================================== Global forms ========================================================================== */
+/** * 1. Change the font styles in all browsers (opinionated). * 2. Remove the margin in Firefox and Safari. */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+textarea {
+  -webkit-appearance: none;
+  appearance: none;
+}
+/* ========================================================================== Global elements ========================================================================== */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  /* Prevent adjustments of font size after orientation changes in IE on Windows Phone */
+  -webkit-text-size-adjust: 100%;
+  /* Prevent adjustments of font size after orientation changes in iOS */
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  margin: 0;
+  /* Remove the margin in all browsers */
+  color: inherit;
+}
+* {
+  font-family: Minecraft;
+  color: #ffffff;
+  text-shadow: 2px 2px #3f3f3f;
+}
+#version {
+  position: absolute;
+  left: 8px;
+  top: 6px;
+  pointer-events: none;
+  z-index: 1;
+}
+#hotbar {
+  margin-left: -92px;
+  margin-bottom: env(safe-area-inset-bottom, 0px);
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  width: 184px;
+  pointer-events: none;
+  z-index: 2;
+}
+#chat {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  pointer-events: none;
+  z-index: 3;
+}
+#previewWindow {
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 60px;
+  width: 480px;
+  height: 300px;
+  z-index: 4;
+}
+#menu {
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+}
+@font-face {
+  font-family: "Minecraft";
+  src: url("fonts/minecraft.woff") format("woff"),
+    url("fonts/minecraft.ttf") format("truetype");
+}
+#progress {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 6;
+}
+#overlay {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 7;
+}
+#mobile {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  text-align: center;
+  background-image: url("../textures/background.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 8;
+}
+#text_vertical {
+  position: relative;
+  top: 50%;
+  text-align: center;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#text_vertical a:link {
+  color: #ffff40;
+}
+#text_vertical a:visited {
+  color: #ffff40;
+}
+#text_vertical a:hover {
+  color: #ffff40;
+}
+#text_vertical a:active {
+  color: #ffff40;
+}
+#webgl_webrtc {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  text-align: center;
+  background-image: url("/textures/background.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 8;
+}
+#hide {
+  position: absolute;
+  left: -9999px;
+}
